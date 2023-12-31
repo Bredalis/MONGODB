@@ -11,12 +11,12 @@ coleccion = db['Alumnos']
 
 # Datos a buscar
 
-datos = {'Nombre': 'Lisa'}
-campos = {'Sexo': 'Femenino'}
+datos_1 = {'Nombre': 'Lisa'}
+datos_2 = {'Sexo': 'Femenino'}
 
 # Buscar
 
-for documento in coleccion.find(datos, campos):
+for documento in coleccion.find(datos_1, datos_2):
 	print(documento)
 
 cliente.close()

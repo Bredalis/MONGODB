@@ -7,8 +7,8 @@ import pymongo
 
 try:
 	cliente = pymongo.MongoClient('mongodb://localhost:27017')
-	print('¡Coneccion a Mongo exitosa!')	
 	cliente.close()
+	print('¡Coneccion a Mongo exitosa!')	
 
 except pymongo.errors.ConnectionFailure as ErrorConexion:
 	print('Fallo al conectarse a MongoDB')
